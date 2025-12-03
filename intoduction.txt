@@ -1,0 +1,28 @@
+1. what is MongoDB?
+-   open source,document-oriented NoSQL database management system. 
+-   Designed for flexibility , scalability & perfoemance in handling unstructured or semi-structured data.
+-   invented company name 10gen after rename MongoDB relesed in 2007.
+-   HUMONOGOUS = Mongo
+
+SQL :- 
+1.relation database
+2.structured format , display in rows and columns
+3.fixed data structure
+4.E-commerce , Hr management , .....
+5.ex: MySql , PostrageSql , Oracle 
+
+
+MongoDB:-
+1.non-relation
+2.flexibility in data storage
+3.allow to varied datatype and structures
+4.Ideal for application with dynamic or evolving data models
+5.CMS, Social media plateforms , Gamings, live stream 
+6. MongoDB,Cassandra , Redies
+
+
+MongoDB Terminologies:-
+database
+collections = tables
+documents = rows (json formate document)
+field = columns
