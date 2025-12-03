@@ -1,0 +1,6 @@
+Installing MongoDB
+1. https://www.mongodb.com/try/download/shell
+2. https://www.mongodb.com/try/download/community
+3. https://www.mongodb.com/try/download/database-tools
+
+(NOTE:- We need to download this all for using the mongodb)

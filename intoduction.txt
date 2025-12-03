@@ -26,3 +26,5 @@ database
 collections = tables
 documents = rows (json formate document)
 field = columns
+
+(NOTE:- we write a data in JSON format but behind it's stored into BSON format)
