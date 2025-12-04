@@ -1,0 +1,25 @@
+//finding documents
+
+1 :- find() - represent multiple documents
+     sy :- db.collection_name.find({key:value})
+     ex :- db.data.find(); or db.data.find({age : 21});
+
+2 :- findOne() - represent only first one documents
+     sy :- db.collection_name.findOne({key:value})
+     ex :- db.data.findOne(); or db.data.find({age : 21});
+
+//Importing JSON file into mongodb
+sy :- mongoimport jsonfile.json -d database_name -c collection_name
+ex :- mongoimport C:\products.json -d shop -c products //only for object file
+ex :- mongoimport C:\products.json -d shop -c products --jsonArray // oject inside the arry use this 
+
+(NOTE :- if above command are not working then use this ["C:\Program Files\MongoDB\Tools\100\bin\mongoimport.exe" --file "D:\sale.json" -d shop -c sale --jsonArray])
+
+//Export JSON file using mongodb
+sy :- mongoexport -d database_name -c collection_name -o path\file_name
+ex :- mongoexport -d shop -c products -o C:\products.json
+
+(NOTE :- if above command are not working then use this ["C:\Program Files\MongoDB\Tools\100\bin\mongoexport.exe" -d shop -c products -o "C:\pro.json"
+])
+
+(NOTE :- import file size is less then 16 MB or only 16 MB)
