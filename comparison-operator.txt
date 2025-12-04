@@ -1,0 +1,31 @@
+1:- $eq (equal to)
+    sy :- db.collectionName.find({'fieldname':{$operator:value}});
+    ex :- db.products.find({'price' : {$eq : 200}});
+
+2:- $ne (not equal to)
+    sy :- db.collectionName.find({'fieldname':{$operator:value}});
+    ex :- db.products.find({'price' : {$eq : 200}});
+
+3:- $gt (grater than)
+    sy :- db.collectionName.find({'fieldname':{$operator:value}});
+    ex :- db.products.find({'price' : {$eq : 200}});
+
+4:- $gte (grater than equal to)
+    sy :- db.collectionName.find({'fieldname':{$operator:value}});
+    ex :- db.products.find({'price' : {$eq : 200}});
+
+5:- $lt (less than)
+    sy :- db.collectionName.find({'fieldname':{$operator:value}});
+    ex :- db.products.find({'price' : {$eq : 200}});
+
+6:- $lte (less than equal to)
+    sy :- db.collectionName.find({'fieldname':{$operator:value}});
+    ex :- db.products.find({'price' : {$eq : 200}});
+
+7:- $in (display same records)
+    sy :- db.collectionName.find({'fieldname':{$operator:[values]}});
+    ex :- db.products.find({'price' : {$in : [200,300,400]}});
+
+8:- $nin (display diffrent records)
+    sy :- db.collectionName.find({'fieldname':{$operator:[value]}});
+    ex :- db.products.find({'price' : {$eq : [200.99,12,900]}});
