@@ -1,0 +1,14 @@
+Cursors :- MongoDB does not return all documents at once. Instead, it returns a cursor, which points to the result set.A query may return thousands or millions of documents.Loading everything at once is slow and uses lot of memory.A cursor loads data in batches, making it faster and efficient. 
+
+1 :- count() - count the total records
+     ex :- db.products.find({'price':{$gt : 250}}).count();
+
+2 :- limit() - display the limited records
+     ex :- db.products.find({'price':{$gt : 250}}).limit(5);
+
+3 :- skip() - skip the records
+     ex :- db.products.find({'price':{$gt : 250}}).limit(5).skip(2);
+
+4 :- sort() - sorting the records
+     ex :- db.products.find({'price':{$gt : 250}}).limit(5).sort({price:1});
+     (NOTE :- 1 = assecending & -1 = Desscending)
