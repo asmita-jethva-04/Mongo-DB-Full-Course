@@ -1,0 +1,23 @@
+//display the all database
+show dbs; or show databases
+
+// which database we want to use
+use <database-name> 
+ex :- use admin
+
+//drop or delete the database
+db.dropDatabase();
+ex :- db.admin();
+
+(NOTE:- If we create a database and run the show command then they doesn't display the database untill we create  any collection.)
+
+//display collection / table
+show collections;
+
+//create collection 
+db.createCollection('<collection-name>');
+ex :- db.createCollection('products');
+
+//drop or delete collection
+db.<collection-name>.drop();
+ex :- db.products.drop();
