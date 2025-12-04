@@ -1,0 +1,8 @@
+Complex Expressions :- 
+->Complex expressions are advanced logical conditions inside a query where you combine multiple operators
+-> The $expr operator allows using arggregation expressions within a query.
+-> Useful when you need to compare fields from the same document in a more complex manner.
+
+sy :- {$expr : {operator : [field , value]}}
+
+ex :- db.products.find({$expr : {$gt : ['price' , 19.99]}})
