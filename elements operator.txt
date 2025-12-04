@@ -1,0 +1,12 @@
+1 :- $exists 
+     sy :- {field : {$exists : <boolean>}}
+     ex :- db.products.find({price : {$exists : true}}).count()
+
+2 :- $type 
+     sy :- {field : {$type : "<bson-data-type>"}}
+     ex :- db.products.find({price : {$type : 'number'}}).count()
+            db.products.find({price : {$type : 2}}).count()
+
+3 :- $size
+     sy :- {field : {$size : <array.length> }}
+     EX :- db.products.find({'comments' : {$size : 4}})
