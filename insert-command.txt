@@ -1,0 +1,34 @@
+//insert only one records
+db.<collection-name>.insertOne({
+    field1 : value1,
+    field2 : value2,
+    .....
+});
+
+ex :- db.data.insertOne({'name': 'asmita' , age : 21});
+
+//insert multiple records
+db.<collection-name>.insertMany([
+    {field1 : value1, field2 : value2,....},
+    {field1 : value1, field2 : value2,....},
+    .....
+]);
+
+ex :- db.data.insertMany([
+    {'name': 'asmita' , age : 21},
+    {'name':'asu',age:20},
+    {'name':'vijaya',age:51}
+]);
+
+(NOTE :- MongoDB does not allow the white space if we want a white space then we need to write the content inside the single/double quotes.)
+
+//If we have any mistake in insert records into database and expect the wrong records another records are inserted into database then use the oredered and unordered
+
+ex :- db.data.insertMany([
+    {'name': 'asmita' , age : 21},
+    {'name':'asu',age:20 , {object_id : "1234567899"},
+    {'name':'vijaya',age:51},
+    {oredered:false}
+]);
+
+(NOTE :- collection & field name is case-sensitive)
