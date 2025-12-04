@@ -4,3 +4,6 @@ Installing MongoDB
 3. https://www.mongodb.com/try/download/database-tools
 
 (NOTE:- We need to download this all for using the mongodb)
+
+mongod --version = start the server
+mongosh --version = work with the cli & interact with database
