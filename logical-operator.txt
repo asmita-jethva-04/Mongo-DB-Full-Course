@@ -1,0 +1,15 @@
+1 :- $and (check both the condition if they true then give true otherwise false)
+     sy :- {$and : [ {condition1} , {condition2} , ....]}
+     ex :- db.products.find({$and :[{'price' : {$gt : 19.99 }},{'name' : 'Smartphone'}]})
+
+2 :- $or (check both the condition if any one is true then give true)
+     sy :- {$and : [ {condition1} , {condition2} , ....]}
+     ex :- db.products.find({$or :[{'price' : {$gt : 2000 }},{'name' : 'Smartphone'}]})
+
+3 :- $not (check condition if they not true then give true)
+     sy :- {field : {$not : {operator : value }}}   
+     ex :- db.products.find({'price' : {$not : {$eq : 19.99}} }).count()
+     
+4 :- $nor (check condition if they match the records then they skip it)
+     sy :- {$and : [ {condition1} , {condition2} , ....]} 
+     ex :- db.products.find({ $nor: [{ 'price': { $gt: 19.99 } }, { 'name': 'Smartphone' }] })
