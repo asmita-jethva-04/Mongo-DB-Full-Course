@@ -1,0 +1,26 @@
+⚡ Quick Difference Table
+
+Feature :- Setup required
+HTTPS :- No
+SSH :- Yes (generate keys)
+
+Feature :- Security
+HTTPS :- ⭐⭐⭐
+SSH :- ⭐⭐⭐⭐ (more secure)
+
+Feature :- Ask password/token
+HTTPS :- Sometimes
+SSH :- Never
+
+Feature :- Works on all networks
+HTTPS :- Yes
+SSH :- Not always
+
+Feature :- Recommended for
+HTTPS :- Beginners
+SSH :- Daily developers
+
+
+🧠 Simple Conclusion
+If you are a beginner → Use HTTPS
+If you are a developer who uses Git daily → Use SSH
